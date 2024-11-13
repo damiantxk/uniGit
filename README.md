@@ -250,11 +250,27 @@ When running `git rebase -i`, you’ll enter a text editor with a list of commit
    git rebase --continue
    ```
 
---- 
+---
 
-To make sure code is up to date,
- git checkout main
- git pull
- git checkout YOUR_BRANCH_HERE
- git rebase main
+## Keeping Code Up-to-Date
 
+1. **Switch to the main branch**:  
+   ```bash
+   git checkout main
+   ```
+2. **Pull the latest changes from the remote repository**:  
+   ```bash
+   git pull
+   ```
+3. **Switch back to your working branch**:  
+   ```bash
+   git checkout <your-branch-name>
+   ```
+4. **Rebase your branch on top of the latest main branch**:  
+   ```bash
+   git rebase main
+   ```
+
+---
+
+This sequence replaces git merge. After rebase, proceed with push.
