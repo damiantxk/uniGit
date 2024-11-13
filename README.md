@@ -1,7 +1,3 @@
-Here’s your Git cheat sheet formatted for GitHub with Markdown-friendly headers:
-
----
-
 # Git Cheat Sheet
 
 ## Initializing a Repository
@@ -128,7 +124,7 @@ Here’s your Git cheat sheet formatted for GitHub with Markdown-friendly header
   git branch --merged
   ```
 
-## Example Workflow
+## Example Workflow -- Impt
 1. **Create and switch to a new branch**:  
    ```bash
    git branch <branch-name>
@@ -256,4 +252,9 @@ When running `git rebase -i`, you’ll enter a text editor with a list of commit
 
 --- 
 
-This cheat sheet provides an overview of Git commands for repository setup, branch management, merging, restoring, and rebasing.
+To make sure code is up to date,
+ git checkout main
+ git pull
+ git checkout YOUR_BRANCH_HERE
+ git rebase main
+
